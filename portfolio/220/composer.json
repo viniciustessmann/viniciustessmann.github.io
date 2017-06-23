@@ -1,0 +1,13 @@
+{
+  "name": "tessmann/bikecorrier",
+  "license": "proprietary",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Tessmann\\": "src/"
+    }
+  },
+  "require": {
+    "phpmailer/phpmailer": "^5.2"
+  }
+}
