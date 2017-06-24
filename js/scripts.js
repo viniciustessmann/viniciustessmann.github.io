@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	$( "#tabs" ).draggable();
+	$( "#error" ).draggable();
 	$( "#tabs" ).tabs();
 
 	/* set hour on menu */
@@ -33,6 +34,7 @@ $(document).ready(function(){
 
 	$('.btnOK').click(function(){
 		$('#error').hide();
+		crash();
 	});
 });	
 
@@ -53,7 +55,7 @@ function power()
 	
 function crash()
 {
-	var timeError = Math.floor(Math.random() * (50000 - 1000 + 1)) + 1000;
+	var timeError = Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000;
 	setTimeout(function(){ 
 		$('#error').show();
 		$(".my_audio_error").trigger('play');
