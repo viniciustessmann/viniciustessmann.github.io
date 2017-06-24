@@ -14,13 +14,13 @@ $(document).ready(function(){
 		$('.suportLoad').show();
 		power();
 	});
-	//power();
 
 });	
 
 
 /* Fake load start */
-function power(){
+function power()
+{
 	var load = 1;	
 	var timerload = setInterval(function(){ 
 		$('.internal').css('width', load + '%');
@@ -28,6 +28,12 @@ function power(){
 		if (load >= 100) {
 			clearInterval(timerload);
 			$('#contentLoad').hide();
+			$(".my_audio").trigger('play');
 		}
 	}, 30);
+}
+
+function start()
+{
+
 }
