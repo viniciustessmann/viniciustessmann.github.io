@@ -53,7 +53,7 @@ function power()
 	
 function crash()
 {
-	var timeError = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+	var timeError = Math.floor(Math.random() * (50000 - 1000 + 1)) + 1000;
 	setTimeout(function(){ 
 		$('#error').show();
 		$(".my_audio_error").trigger('play');
