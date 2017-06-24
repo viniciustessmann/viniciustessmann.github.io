@@ -1,52 +1,114 @@
 body {
 	margin: 0;
+	background: url('img/background2.jpg');
 }
 
-
-#content {
-	float: left;
+#menuSystem {
 	width: 100%;
-	height: 100vh;
-	background: url('img/development.jpeg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	opacity : 0.9;
-}
-
-
-.suport {
-	width:50%;
-	height:10%;
-	position:absolute;
-	top:10%;
-	left:50%;
-	margin-left:-47%;
-	opacity : 1;
+	height: 40px;
+	position: absolute;
+	top: 0px;
 	z-index: 10;
+	background: grey;
+	border-bottom: solid 1px black;
 }
 
-.suport .btn {
-	float: left;
-	width: 40%;
-	height: 100%;
-	border: solid 1px #FFF;
-	margin-right: 9%;
--webkit-box-shadow: 10px 26px 106px 17px rgba(247,239,247,1);
--moz-box-shadow: 10px 26px 106px 17px rgba(247,239,247,1);
-box-shadow: 10px 26px 106px 17px rgba(247,239,247,1);
+#menuSystem .date {
+	float: right;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 10px;
+    margin-right: 60px;
 }
 
-.suport .btn:hover{
-	background: #BEBEBE;
-	transition: width 2s linear 1s;
+#dock {
+	position: absolute;
+	width: 60%;
+	height: 60px;
+	bottom: 0;
 }
 
-.suport .btn a {
-	text-align: center;
-	float: left;
-	text-decoration: none;
+#tabs {
+	margin-top: 20%;
+	margin-left: 20%;
+	width: 60%;
+	height: 80%;
+	background: black;
+}
+
+#tabs .menuTerminal{
+	width: 95%;
+    background: black;
+    border: none;
+}
+
+#tabs .menuTerminal a{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+	color: green;
+}
+
+#tabs span{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+	color: green;
+}
+
+#tabs ul {
+	background: black;
+}
+
+#tabs ul li{
+	background: black;
+}
+
+#tabs ul li a{
+	color: green; 
+	background: black;
+}
+
+#tabs .bar{
 	width: 100%;
-	font-size: 28px;
-	margin-top: 7%;
-	color: #FFF;
+    height: 30px;
+    background: grey;
+    float: left;
 }
+
+#tabs .bar p{
+	color: black;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+#tabs .bar .min {
+	float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orange;
+    color: black;
+    text-align: center;
+    margin-top: -25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#tabs .bar .close{
+	float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    color: black;
+    text-align: center;
+    margin-top: -25px;
+    margin-right: 10px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+

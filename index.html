@@ -3,18 +3,53 @@
 <head>
 	<title>Vinícius Schlee Tessmann</title>
 	<meta charset="UTF-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.js"></script>
 </head>
 <body>
 
-	<div id="content">
+	<div id="menuSystem">
+		<span class="date">DATA</span>
+
 	</div>
 
-	<div class="suport">
-		<div class="btn"><a class="btnMenu" href="javascript:void(0)">About me__</a></div>
-		<div class="btn"><a class="btnMenu" href="javascript:void(0)">Social networks__</a></div>
+	<div id="tabs">
+		<div class="bar">
+			<p>Terminal v1.0</p>
+			<span class="min">_</span>
+			<span class="close">X</span>
+		</div>
+
+		<ul class="menuTerminal">
+		    <li><a href="#tabs-1">About me</a></li>
+		   	<li><a href="#tabs-2">Social networks</a></li>
+		   	<li><a href="#tabs-3">Contact</a></li>
+		</ul>
+
+	  	<div id="tabs-1">
+	    	<span>I'm Vinícius Schlee Tessmann, web developer, geek, cyclist, and coffee lover.</span>
+	  	</div>
+	  	<div id="tabs-2">
+	    	<span>
+	    		<a style="color:green;" target="_blank" href="https://www.facebook.com/vinicius.schleetessmann">Facebook</a></br>
+	    		<a style="color:green;" target="_blank" href="https://github.com/viniciustessmann">Git Hub</a></br>
+	    	</span>
+	  	</div>
+	  	<div id="tabs-3">
+	    	<span>
+	    		E-mail: viniciusschleetessmann@gmail.com
+	    	</span>
+	  	</div>
+	</div>
+
+
+	<div id="dock">
 	</div>
 
 </body>
