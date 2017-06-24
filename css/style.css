@@ -80,6 +80,46 @@ body {
     margin-right: 60px;
 }
 
+#menuSystem .btnStart{
+	float: left;
+    width: 100px;
+    height: 18px;
+    color: #FFF;
+    margin-left: 31px;
+    cursor: pointer;
+    border: solid 1px;
+    background: #6B8E23;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#menuStart{
+	position: fixed;
+    top: 21px;
+    left: 31px;
+    border: solid 1px black;
+    z-index: 999;
+    width: 20%;
+    height: 60%;
+    background: grey;
+    display: none;
+}
+
+#menuStart ul {
+	 list-style-type: none;
+}
+
+#menuStart ul li {
+	border-bottom: solid 1px black;
+}
+
+#menuStart ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Press Start 2P', cursive;
+}
+
 #dock {
 	position: absolute;
 	width: 60%;
@@ -93,6 +133,7 @@ body {
 	width: 60%;
 	height: 80%;
 	background: black;
+	display: none;
 }
 
 #tabs .menuTerminal{

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	$( "#tabs" ).draggable();
 	$( "#tabs" ).tabs();
 
@@ -15,8 +16,22 @@ $(document).ready(function(){
 		power();
 	});
 
-});	
+	$('.btnStart').click(function(){
+		$('#menuStart').show();
+		$(this).hide();
+	});
 
+	$('.openTerminal').click(function(){
+		$('.btnStart').show();
+		$('#menuStart').hide();
+		$('#tabs').show();
+	});
+
+	$('.close').click(function(){
+		$('#tabs').hide();
+	});
+
+});	
 
 /* Fake load start */
 function power()
@@ -28,12 +43,12 @@ function power()
 		if (load >= 100) {
 			clearInterval(timerload);
 			$('#contentLoad').hide();
-			$(".my_audio").trigger('play');
+			start();
 		}
 	}, 30);
 }
 
 function start()
 {
-
+	$(".my_audio").trigger('play');
 }
