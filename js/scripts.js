@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 	$( "#tabs" ).draggable();
 	$( "#tabs" ).tabs();
 
@@ -31,6 +30,10 @@ $(document).ready(function(){
 		$('#tabs').hide();
 	});
 
+
+	$('.btnOK').click(function(){
+		$('#error').hide();
+	});
 });	
 
 /* Fake load start */
@@ -47,8 +50,19 @@ function power()
 		}
 	}, 30);
 }
+	
+function crash()
+{
+	var timeError = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+	setTimeout(function(){ 
+		$('#error').show();
+		$(".my_audio_error").trigger('play');
+	}, timeError);
+
+}
 
 function start()
 {
 	$(".my_audio").trigger('play');
+	crash();
 }
